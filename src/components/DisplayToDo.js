@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./DisplayToDo.css";
 
 function DisplayToDo({ todos, onDelete, onEdit, onStatus, showText }) {
-  
   return (
     <div className="todo-container">
       <ul className="todo-list">
@@ -19,7 +18,7 @@ function DisplayToDo({ todos, onDelete, onEdit, onStatus, showText }) {
                 onStatus(index);
               }}
             >
-              {showText? "Done" : "Undone"}
+              {todo.completed ? "Undone" : "Done"}
             </button>
             <div className="todo">
               <p className={`todo-text ${todo.completed && "completed"}`}>
