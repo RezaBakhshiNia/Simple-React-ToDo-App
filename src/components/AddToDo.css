@@ -1,0 +1,56 @@
+.render-todo {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  row-gap: 2rem;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input,
+.select {
+  margin: 1rem;
+}
+
+.input {
+  display: flex;
+  place-content: center;
+  background: #fff;
+  border-radius: 7px;
+  border: 2px solid gainsboro;
+  padding: 0.1rem;
+  border-bottom: 3px solid gainsboro;
+}
+
+.todo-input, .todo-button {
+  border: none;
+  outline: none;
+  background: inherit;
+  padding: 0.5rem 1.8rem;
+}
+
+.todo-button {
+  cursor: pointer;
+}
+
+.todo-button svg {
+  width: 200%;
+  height: 100%;
+  padding: 0;
+}
+
+.filter-todo {
+  color: #ff6f47;
+  font-family: poppins;
+  width: 12rem;
+  height: 2rem;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+}

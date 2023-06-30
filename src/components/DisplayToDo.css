@@ -1,0 +1,38 @@
+.todo-container {
+  width: 90%;
+
+  margin: auto;
+}
+
+.todo-list {
+  display: grid;
+  place-content: center;
+  row-gap: 1rem;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: snow;
+  padding: 0.8rem;
+  color: black;
+  border-radius: 16px;
+  column-gap: 0.5rem;
+}
+
+.todo-item button {
+  border: none;
+  outline: none;
+  background: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f47, #b9bc00);
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.todo {
+  margin: 0 1rem;
+}
